@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="pokestyles.css">
+    <title>Pokedex Base de Datos</title>    
+</head>
+
+<body class="text-bg-grey p-3, container-xxl">
+
+    <nav>
+        <h1>PokeDex</h1>
+    </nav>  
+
+    <main class="row row-cols-1">
+
+        <section id="pokemon1" class="card, , text-bg-primary p-3" >    
+
+            <section id="input">
+                <input type="text" id="inputName" placeholder="nombre o id pokemon" class="form-control me-2">
+                <button class="btn btn-warning" id="bttnBuscar">Buscar</button>
+            </section>
+
+            <section class="text-bg-light p-3">
+                <div id="tarjeta">
+                    <div class="ref-pokemon">
+                        <div id="name-pokemon">
+                            <h2>Nombre</h2> 
+                        </div>
+                        <div id="id-pokemon">
+                            <h2>id:</h2>
+                        </div>
+                    </div>
+                    <div id="cont-img">
+                        <img src="img/pokeball.webp" alt="" id="img-pokemon"  class="img-fluid">
+                    </div>
+                    <div id="type-pokemon">
+                        <h3>Tipo</h3>
+                    </div>
+                    <div id="stats-pokemon">
+                        <h3>Estadisticas base</h3>
+                    </div>
+                    <div id="abilty-pokemon">
+                        <h3>Habilidades</h3>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>   
+
+    <script src="poke.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>
